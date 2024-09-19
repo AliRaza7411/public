@@ -1,0 +1,210 @@
+/* css variables */
+:root {
+    --dark-blue: #0E1422;
+    --light-blue: #162953;
+    --light-gray: #f9f1f1;
+    --dark-gray: #e0e0e3;
+}
+
+/** bootstrap overrides **/
+.btn-primary {
+
+    background-color: var(--dark-blue);
+    color: white;
+    border: 0;
+    padding: 8px 25px;
+}
+
+.btn-primary:hover {
+    background-color: var(--light-blue);
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.topBar {
+    background-color: var(--dark-blue);
+}
+
+.hero {
+    background-color: var(--light-gray);
+   height: 90vh;
+   margin-top: -50px;
+    
+}
+
+.hero-right {
+    position: relative;
+    margin-top: 70px;
+}
+.head-text{
+    margin-top: 60px;
+}
+.hero-right img {
+    
+    width: 70%;
+    position: absolute;
+   top: 40px;
+    z-index: 3;
+    
+
+}
+
+/*.hero-circle {
+    background-color: var(--dark-gray);
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+    top: 0px;
+}*/
+.hero,
+.footer,
+.newsletter,
+.free,
+.fashion,
+.featured-products,
+.shopnow {
+
+    padding: 80px 0;
+}
+
+.fashion {
+    background-image: linear-gradient(120deg, #cbcbcb71 0%, #ebedee00 100%);
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.fashion p {
+    color: #9c9c9c;
+}
+
+.fashion img {
+    width: 250px;
+    margin-top: 20px;
+     
+}
+.newsletter {
+    background-color: var(--dark-gray);
+    margin-bottom: 80px;
+}
+
+.footer h6 {
+    color: #9d9c9c;
+}
+
+.footer ul li a {
+    color: #656978;
+}
+
+@media screen and(min-width: 400px) {
+
+
+
+    .hero-right img {
+        width: 100%;
+        position: absolute;
+        top: -615px;
+        right: 100px;
+        z-index: 3;
+    
+
+    }
+     .hero{
+       margin-top: 100px !important;
+       
+     }
+     .head-text{
+        text-align: center;
+    
+     }
+
+    
+   
+}
+
+@media screen and (min-width: 768px) {
+
+
+    .hero-right img {
+        max-width: 100%;
+        position: absolute;
+        right: 10px;
+        top: px;
+        z-index: 3;
+        display: block;
+        
+    }
+     .head-text{
+        margin-top: 150px;
+        
+     }
+    .hero{
+        margin-top: 0px;
+      padding-top: 50px;
+    }
+
+
+.hero-circle {
+    background-color: var(--dark-gray);
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+bottom: -200px;
+}
+ .head-text{
+    margin-top: 150px;
+    
+ }
+ .fashion img {
+    width: 200px;
+    position: absolute;
+    top: -45px; 
+      
+}
+}
+
+
+
+@media screen and (min-width: 992px) {
+
+
+    .hero-right img {
+        max-width: 72%;
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        z-index: 3;
+        display: block;
+        
+    }
+    
+
+
+.hero-circle {
+    background-color: var(--dark-gray);
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+    
+    top: 1px;
+}
+
+}
